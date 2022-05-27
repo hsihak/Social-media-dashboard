@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <script src="https://kit.fontawesome.com/e887aa9f6f.js" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>r
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="mx-auto w-11/12 h-screen dark:bg-gray-500">
+  <main class="grid justify-center items-center py-4">
+    <div class="title grid gap-y-2">
+      <div>
+        <h1 class="text-3xl font-bold">Social Media Dashboard</h1>
+        <p class="text-dark-grayish-blue font-semibold">Total Followers: 23,004</p>
+      </div>
+      <hr class="border-dark-grayish-blue">
+      <div class="dark-mode flex justify-between items-center">
+        <p class="text-dark-grayish-blue font-semibold">Dark Mode</p>
+        <i class="fa-solid fa-toggle-off fa-3x text-purple-600"></i>
+      </div>
+    </div>
+    <!-- Social Media Cards -->
+    <!-- Facebook card -->
+    <div class="social-media grid gap-y-6 py-6">
+      <div class="facebook grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 border-t-facebook border-t-4 rounded-md">
+        <div class="facebook-link grid gap-x-1 grid-flow-col items-center justify-center">
+          <img src="../images/icon-facebook.svg" alt="facebook icon">
+          <p class="text-dark-grayish-blue font-medium">@nathanf</p>
+        </div>
+        <div class="facebook-followers">
+          <h3 class="text-6xl font-bold">1987</h3>
+          <p class="text-dark-grayish-blue tracking-widest pt-1">FOLLOWERS</p>
+        </div>
+        <div class="facebook-update">
+          <p class="text-lime-green font-semibold">12 Today</p>
+        </div>
+      </div>
+      <!-- Twitter Card-->
+      <div class="twitter grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 border-t-twitter border-t-4 rounded-md">
+        <div class="twitter-link grid gap-x-1 grid-flow-col items-center justify-center">
+          <img src="../images/icon-twitter.svg" alt="twitter icon">
+          <p class="text-dark-grayish-blue font-medium">@nathanf</p>
+        </div>
+        <div class="twitter-followers">
+          <h3 class="text-6xl font-bold">1044</h3>
+          <p class="text-dark-grayish-blue tracking-widest pt-1">FOLLOWERS</p>
+        </div>
+        <div class="twitter-update">
+          <p class="text-lime-green font-semibold">99 Today</p>
+        </div>
+      </div>
+      <!-- Instagram Card -->
+      <div class="instagram grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 border-t-instagram border-t-4 rounded-md">
+        <div class="instagram-link grid gap-x-1 grid-flow-col items-center justify-center">
+          <img src="../images/icon-instagram.svg" alt="instagram icon">
+          <p class="text-dark-grayish-blue font-medium">@realnathanf</p>
+        </div>
+        <div class="instagram-followers">
+          <h3 class="text-6xl font-bold">11k</h3>
+          <p class="text-dark-grayish-blue tracking-widest pt-1">FOLLOWERS</p>
+        </div>
+        <div class="instagram-update">
+          <p class="text-lime-green font-semibold">1099 Today</p>
+        </div>
+      </div>
+
+      <!-- Youtube Card -->
+      <div class="youtube grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 border-t-youtube border-t-4 rounded-md">
+        <div class="youtube-link grid gap-x-1 grid-flow-col items-center justify-center">
+          <img src="../images/icon-youtube.svg" alt="youtube icon">
+          <p class="text-dark-grayish-blue font-medium">Nathan F.</p>
+        </div>
+        <div class="youtube-followers">
+          <h3 class="text-6xl font-bold">11k</h3>
+          <p class="text-dark-grayish-blue tracking-widest pt-1">SUBSCRIBERS</p>
+        </div>
+        <div class="youtube-update">
+          <p class="text-youtube font-semibold">144 Today</p>
+        </div>
+      </div>
+
+      <!-- Overview Today  -->
+      <div class="overview-container grid gap-y-4">
+        <h1 class="text-2xl">Overview- Today</h1>
+        <!-- Page Views -->
+        <div class="facebook-views grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md">
+          <div class="page-views grid gap-y-4 py-6">
+            <h4 class="text-dark-grayish-blue font-semibold">Page Views</h4>
+            <p class="font-bold text-4xl">87</p>
+          </div>
+          <div class="page-logo grid items-center gap-y-4 py-6">
+            <img class="justify-self-end" src="../images/icon-facebook.svg" alt="facebook icon">
+            <p class="text-lime-green font-semibold self-end">3%</p>
+          </div>
+        </div>
+        <!-- Facebook Likes -->
+        <div class="facebook-likes grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md">
+          <div class="grid gap-y-4 py-6">
+            <h4 class="text-dark-grayish-blue font-semibold">Likes</h4>
+            <p class="font-bold text-4xl">52</p>
+          </div>
+          <div class="page-logo grid items-center gap-y-4 py-6">
+            <img class="justify-self-end" src="../images/icon-facebook.svg" alt="facebook icon">
+            <p class="text-youtube font-semibold self-end">2%</p>
+          </div>
+        </div>
+        <!-- Instagram Likes -->
+        <div class="instagram-likes grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md">
+          <div class="grid gap-y-4 py-6">
+            <h4 class="text-dark-grayish-blue font-semibold">Likes</h4>
+            <p class="font-bold text-4xl">5462</p>
+          </div>
+          <div class="page-logo grid gap-y-4 py-6">
+            <img class="justify-self-end" src="../images/icon-instagram.svg" alt="instagram icon">
+            <p class="text-lime-green font-semibold self-end">2257%</p>
+          </div>
+        </div>
+        <!-- Instragram Profile Views -->
+        <div class="instagram-views grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md">
+          <div class="grid gap-y-4 py-6">
+            <h4 class="text-dark-grayish-blue font-semibold">Profile Views</h4>
+            <p class="font-bold text-4xl">52k</p>
+          </div>
+          <div class="page-logo grid gap-y-4 py-6">
+            <img class="justify-self-end" src="../images/icon-instagram.svg" alt="instagram icon">
+            <p class="text-lime-green font-semibold self-end">1375%</p>
+          </div>
+        </div>
+        <!-- Twitter Retweets -->
+        <div class="twitter-retweets grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md">
+          <div class="grid gap-y-4 py-6">
+            <h4 class="text-dark-grayish-blue font-semibold">Reweets</h4>
+            <p class="font-bold text-4xl">117</p>
+          </div>
+          <div class="page-logo grid gap-y-4 py-6">
+            <img class="justify-self-end" src="../images/icon-twitter.svg" alt="instagram icon">
+            <p class="text-lime-green font-semibold self-end">303%</p>
+          </div>
+        </div>
+        <!-- Twitter Likes -->
+        <div class="twitter-likes grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md">
+          <div class="grid gap-y-4 py-6">
+            <h4 class="text-dark-grayish-blue font-semibold">Likes</h4>
+            <p class="font-bold text-4xl">507</p>
+          </div>
+          <div class="page-logo grid gap-y-4 py-6">
+            <img class="justify-self-end" src="../images/icon-twitter.svg" alt="instagram icon">
+            <p class="text-lime-green font-semibold self-end">553%</p>
+          </div>
+        </div>
+        <!-- Youtube Likes -->
+        <div class="youtube-likes grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md">
+          <div class="grid gap-y-4 py-6">
+            <h4 class="text-dark-grayish-blue font-semibold">Likes</h4>
+            <p class="font-bold text-4xl">107</p>
+          </div>
+          <div class="page-logo grid gap-y-4 py-6">
+            <img class="justify-self-end" src="../images/icon-youtube.svg" alt="instagram icon">
+            <p class="text-lime-green font-semibold self-end">19%</p>
+          </div>
+        </div>
+        <!-- Youtube Total Views -->
+        <div class="youtube-views grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md">
+          <div class="grid gap-y-4 py-6">
+            <h4 class="text-dark-grayish-blue font-semibold">Total Views</h4>
+            <p class="font-bold text-4xl">1407</p>
+          </div>
+          <div class="page-logo grid gap-y-4 py-6">
+            <img class="justify-self-end" src="../images/icon-youtube.svg" alt="instagram icon">
+            <p class="text-lime-green font-semibold self-end">12%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hangsihak Sin</a>.
+  </div>
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>
+</body>
+</html>
