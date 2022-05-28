@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -22,8 +22,8 @@
       <hr class="border-dark-grayish-blue sm:hidden">
       <div class="dark-mode grid grid-flow-col justify-between items-center md:justify-end md:gap-4">
         <p class="text-dark-grayish-blue font-semibold sm:hidden md:grid dark:text-desaturated-blue">Dark Mode</p>
-        <label class="switch">
-          <input type="checkbox">
+        <label for="toggleButton" class="switch">
+          <input type="checkbox" id="toggleButton">
           <span id="darkMode" class="slider round"></span>
         </label>
       </div>
@@ -214,16 +214,7 @@
   <!-- Footer -->
   <div class="attribution dark:text-white">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="">Hangsihak Sin</a>.
+    Coded by <a href="#">Hangsihak Sin</a>.
   </div>
-  <script>
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark');
-} else {
-    document.documentElement.classList.remove('dark');
-}
-
-  </script>
 </body>
 </html>
