@@ -5,18 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/output.css" >
+  <link rel="stylesheet" href="./dist/slider.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
   <script src="https://kit.fontawesome.com/e887aa9f6f.js" crossorigin="anonymous"></script>
   <script src="./app.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body class="mx-auto sm:px-10 dark:bg-very-dark-blue">
-  <main class="grid justify-center items-center py-4">
+<body class="sm:px-10 dark:bg-very-dark-blue">
+  <main class="grid justify-center items-center py-4 px-6 auto-cols-fr">
     <div class="title grid gap-y-2 sm:grid-flow-col pb-6">
       <div>
         <h1 class="text-3xl font-bold dark:text-white">Social Media Dashboard</h1>
@@ -25,14 +22,17 @@
       <hr class="border-dark-grayish-blue sm:hidden">
       <div class="dark-mode grid grid-flow-col justify-between items-center md:justify-end md:gap-4">
         <p class="text-dark-grayish-blue font-semibold sm:hidden md:grid dark:text-desaturated-blue">Dark Mode</p>
-        <i class="fa-solid fa-toggle-off fa-3x text-purple-600"></i>
+        <label class="switch">
+          <input type="checkbox">
+          <span id="darkMode" class="slider round"></span>
+        </label>
       </div>
     </div>
     <!-- Social Media Cards -->
     <div class="grid ">
       <div class="social-media grid gap-y-6 py-6 sm:grid-flow-col sm:gap-x-8 sm:grid-rows-2 lg:grid-rows-1">
         <!-- Facebook card -->
-        <div class="facebook grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 hover:bg-toggle-light cursor-pointer border-t-facebook border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+        <div class="facebook grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 duration-500 hover:bg-toggle-light cursor-pointer border-t-facebook border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
           <div class="facebook-link grid gap-x-1 grid-flow-col items-center justify-center">
             <img src="../images/icon-facebook.svg" alt="facebook icon">
             <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">@nathanf</p>
@@ -48,7 +48,7 @@
           </div>
         </div>
         <!-- Twitter Card-->
-        <div class="twitter grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 hover:bg-toggle-light cursor-pointer border-t-twitter border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+        <div class="twitter grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 duration-500 hover:bg-toggle-light cursor-pointer border-t-twitter border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
           <div class="twitter-link grid gap-x-1 grid-flow-col items-center justify-center">
             <img src="../images/icon-twitter.svg" alt="twitter icon">
             <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">@nathanf</p>
@@ -64,7 +64,7 @@
           </div>
         </div>
         <!-- Instagram Card -->
-        <div class="instagram grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 hover:bg-toggle-light cursor-pointer border-t-instagram border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+        <div class="instagram grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 duration-500 hover:bg-toggle-light cursor-pointer border-t-instagram border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
           <div class="instagram-link grid gap-x-1 grid-flow-col items-center justify-center ">
             <img src="../images/icon-instagram.svg" alt="instagram icon">
             <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">@realnathanf</p>
@@ -81,7 +81,7 @@
         </div>
 
         <!-- Youtube Card -->
-        <div class="youtube grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 hover:bg-toggle-light cursor-pointer border-t-youtube border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+        <div class="youtube grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 duration-500 hover:bg-toggle-light cursor-pointer border-t-youtube border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
           <div class="youtube-link grid gap-x-1 grid-flow-col items-center justify-center">
             <img src="../images/icon-youtube.svg" alt="youtube icon">
             <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">Nathan F.</p>
@@ -102,9 +102,9 @@
       <div class="overview-container grid">
         <h1 class="text-2xl text-dark-grayish-blue font-semibold py-6">Overview- Today</h1>
         <!-- Cards container -->
-        <div class="card-stats grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div class="card-stats grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 duration-500">
           <!-- Page Views -->
-          <div class="facebook-views grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+          <div class="facebook-views grid grid-flow-col justify-between px-6 duration-500 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
             <div class="page-views grid gap-y-4 py-6 ">
               <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Page Views</h4>
               <p class="font-bold text-4xl dark:text-white">87</p>
@@ -117,7 +117,7 @@
             </div>
           </div>
           <!-- Facebook Likes -->
-          <div class="facebook-likes grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+          <div class="facebook-likes grid grid-flow-col justify-between px-6 duration-500 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
             <div class="grid gap-y-4 py-6">
               <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
               <p class="font-bold text-4xl dark:text-white">52</p>
@@ -130,7 +130,7 @@
             </div>
           </div>
           <!-- Instagram Likes -->
-          <div class="instagram-likes grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue gap-x-10 dark:hover:bg-toggle-dark">
+          <div class="instagram-likes grid grid-flow-col justify-between px-6 duration-500 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue gap-x-10 dark:hover:bg-toggle-dark">
             <div class="grid gap-y-4 py-6">
               <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
               <p class="font-bold text-4xl dark:text-white">5462</p>
@@ -143,7 +143,7 @@
             </div>
           </div>
           <!-- Instragram Profile Views -->
-          <div class="instagram-views grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+          <div class="instagram-views grid grid-flow-col justify-between px-6 duration-500 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
             <div class="grid gap-y-6 py-6">
               <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Profile Views</h4>
               <p class="font-bold text-4xl dark:text-white">52k</p>
@@ -156,7 +156,7 @@
             </div>
           </div>
           <!-- Twitter Retweets -->
-          <div class="twitter-retweets grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+          <div class="twitter-retweets grid grid-flow-col justify-between px-6 duration-500 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
             <div class="grid gap-y-4 py-6">
               <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Reweets</h4>
               <p class="font-bold text-4xl dark:text-white">117</p>
@@ -169,7 +169,7 @@
             </div>
           </div>
           <!-- Twitter Likes -->
-          <div class="twitter-likes grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+          <div class="twitter-likes grid grid-flow-col justify-between px-6 duration-500 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
             <div class="grid gap-y-4 py-6">
               <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
               <p class="font-bold text-4xl dark:text-white">507</p>
@@ -182,7 +182,7 @@
             </div>
           </div>
           <!-- Youtube Likes -->
-          <div class="youtube-likes grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+          <div class="youtube-likes grid grid-flow-col justify-between px-6 duration-500 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
             <div class="grid gap-y-4 py-6">
               <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
               <p class="font-bold text-4xl dark:text-white">107</p>
@@ -195,7 +195,7 @@
             </div>
           </div>
           <!-- Youtube Total Views -->
-          <div class="youtube-views grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+          <div class="youtube-views grid grid-flow-col justify-between px-6 duration-500 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
             <div class="grid gap-y-4 py-6">
               <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Total Views</h4>
               <p class="font-bold text-4xl dark:text-white">1407</p>
@@ -218,11 +218,12 @@
   </div>
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark')
-    }
+if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+} else {
+    document.documentElement.classList.remove('dark');
+}
+
   </script>
 </body>
 </html>

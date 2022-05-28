@@ -1,8 +1,8 @@
 module.exports = {
   content: ["./*.{html,js}"],
+  darkMode: 'class',
   theme: {
     extend: {
-      darkMode: 'class',
       colors: {
         // Primary
         'facebook': 'hsl(208, 92%, 53%)',
