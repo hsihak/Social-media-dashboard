@@ -13,208 +13,208 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    #checkbox:checked + label .switch-ball{
-      background-color: white;
-      transform: translateX(24px);
-      transition: transform 0.3s linear;
-    }
   </style>
 </head>
-<body class="mx-auto w-11/12 h-screen dark:bg-very-dark-blue">
+<body class="mx-auto sm:px-10 dark:bg-very-dark-blue">
   <main class="grid justify-center items-center py-4">
-    <div class="title grid gap-y-2">
+    <div class="title grid gap-y-2 sm:grid-flow-col pb-6">
       <div>
         <h1 class="text-3xl font-bold dark:text-white">Social Media Dashboard</h1>
         <p class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Total Followers: 23,004</p>
       </div>
-      <hr class="border-dark-grayish-blue">
-      <div class="dark-mode flex justify-between items-center">
-        <p class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Dark Mode</p>
+      <hr class="border-dark-grayish-blue sm:hidden">
+      <div class="dark-mode grid grid-flow-col justify-between items-center md:justify-end md:gap-4">
+        <p class="text-dark-grayish-blue font-semibold sm:hidden md:grid dark:text-desaturated-blue">Dark Mode</p>
         <i class="fa-solid fa-toggle-off fa-3x text-purple-600"></i>
       </div>
     </div>
     <!-- Social Media Cards -->
-    <!-- Facebook card -->
-    <div class="social-media grid gap-y-6 py-6 ">
-      <div class="facebook grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 border-t-facebook border-t-4 rounded-md dark:bg-dark-desaturated-blue">
-        <div class="facebook-link grid gap-x-1 grid-flow-col items-center justify-center">
-          <img src="../images/icon-facebook.svg" alt="facebook icon">
-          <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">@nathanf</p>
+    <div class="grid ">
+      <div class="social-media grid gap-y-6 py-6 sm:grid-flow-col sm:gap-x-8 sm:grid-rows-2 lg:grid-rows-1">
+        <!-- Facebook card -->
+        <div class="facebook grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 hover:bg-toggle-light cursor-pointer border-t-facebook border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+          <div class="facebook-link grid gap-x-1 grid-flow-col items-center justify-center">
+            <img src="../images/icon-facebook.svg" alt="facebook icon">
+            <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">@nathanf</p>
+          </div>
+          <div class="facebook-followers">
+            <h3 class="text-6xl font-bold dark:text-white">1987</h3>
+            <p class="text-dark-grayish-blue tracking-widest pt-1 dark:text-desaturated-blue">FOLLOWERS</p>
+          </div>
+          <div class="facebook-update">
+            <p class="text-lime-green font-semibold grid grid-flow-col justify-center gap-2 dark:text-white">
+              <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
+              12 Today</p>
+          </div>
         </div>
-        <div class="facebook-followers">
-          <h3 class="text-6xl font-bold dark:text-white">1987</h3>
-          <p class="text-dark-grayish-blue tracking-widest pt-1 dark:text-desaturated-blue">FOLLOWERS</p>
+        <!-- Twitter Card-->
+        <div class="twitter grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 hover:bg-toggle-light cursor-pointer border-t-twitter border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+          <div class="twitter-link grid gap-x-1 grid-flow-col items-center justify-center">
+            <img src="../images/icon-twitter.svg" alt="twitter icon">
+            <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">@nathanf</p>
+          </div>
+          <div class="twitter-followers">
+            <h3 class="text-6xl font-bold dark:text-white">1044</h3>
+            <p class="text-dark-grayish-blue tracking-widest pt-1 dark:text-desaturated-blue">FOLLOWERS</p>
+          </div>
+          <div class="twitter-update">
+            <p class="text-lime-green font-semibold grid grid-flow-col justify-center gap-2">
+              <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
+              99 Today</p>
+          </div>
         </div>
-        <div class="facebook-update">
-          <p class="text-lime-green font-semibold grid grid-flow-col justify-center gap-2 dark:text-white">
-            <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
-            12 Today</p>
+        <!-- Instagram Card -->
+        <div class="instagram grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 hover:bg-toggle-light cursor-pointer border-t-instagram border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+          <div class="instagram-link grid gap-x-1 grid-flow-col items-center justify-center ">
+            <img src="../images/icon-instagram.svg" alt="instagram icon">
+            <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">@realnathanf</p>
+          </div>
+          <div class="instagram-followers">
+            <h3 class="text-6xl font-bold dark:text-white">11k</h3>
+            <p class="text-dark-grayish-blue tracking-widest pt-1 dark:text-desaturated-blue">FOLLOWERS</p>
+          </div>
+          <div class="instagram-update">
+            <p class="text-lime-green font-semibold grid grid-flow-col justify-center gap-2">
+              <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
+              1099 Today</p>
+          </div>
         </div>
-      </div>
-      <!-- Twitter Card-->
-      <div class="twitter grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 border-t-twitter border-t-4 rounded-md dark:bg-dark-desaturated-blue">
-        <div class="twitter-link grid gap-x-1 grid-flow-col items-center justify-center ">
-          <img src="../images/icon-twitter.svg" alt="twitter icon">
-          <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">@nathanf</p>
-        </div>
-        <div class="twitter-followers">
-          <h3 class="text-6xl font-bold dark:text-white">1044</h3>
-          <p class="text-dark-grayish-blue tracking-widest pt-1 dark:text-desaturated-blue">FOLLOWERS</p>
-        </div>
-        <div class="twitter-update">
-          <p class="text-lime-green font-semibold grid grid-flow-col justify-center gap-2">
-            <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
-            99 Today</p>
-        </div>
-      </div>
-      <!-- Instagram Card -->
-      <div class="instagram grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 border-t-instagram border-t-4 rounded-md dark:bg-dark-desaturated-blue">
-        <div class="instagram-link grid gap-x-1 grid-flow-col items-center justify-center ">
-          <img src="../images/icon-instagram.svg" alt="instagram icon">
-          <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">@realnathanf</p>
-        </div>
-        <div class="instagram-followers">
-          <h3 class="text-6xl font-bold dark:text-white">11k</h3>
-          <p class="text-dark-grayish-blue tracking-widest pt-1 dark:text-desaturated-blue">FOLLOWERS</p>
-        </div>
-        <div class="instagram-update">
-          <p class="text-lime-green font-semibold grid grid-flow-col justify-center gap-2">
-            <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
-            1099 Today</p>
-        </div>
-      </div>
 
-      <!-- Youtube Card -->
-      <div class="youtube grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 border-t-youtube border-t-4 rounded-md dark:bg-dark-desaturated-blue">
-        <div class="youtube-link grid gap-x-1 grid-flow-col items-center justify-center">
-          <img src="../images/icon-youtube.svg" alt="youtube icon">
-          <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">Nathan F.</p>
-        </div>
-        <div class="youtube-followers">
-          <h3 class="text-6xl font-bold dark:text-white">8239</h3>
-          <p class="text-dark-grayish-blue tracking-widest pt-1 dark:text-desaturated-blue">SUBSCRIBERS</p>
-        </div>
-        <div class="youtube-update">
-          <p class="text-bright-red font-semibold grid grid-flow-col justify-center gap-2">
-            <img class="up self-center" src="./images/icon-down.svg" alt="icon-up">
-            144 Today</p>
+        <!-- Youtube Card -->
+        <div class="youtube grid justify-center bg-light-grayish-blue gap-y-4 text-center py-8 hover:bg-toggle-light cursor-pointer border-t-youtube border-t-4 rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+          <div class="youtube-link grid gap-x-1 grid-flow-col items-center justify-center">
+            <img src="../images/icon-youtube.svg" alt="youtube icon">
+            <p class="text-dark-grayish-blue font-medium dark:text-desaturated-blue">Nathan F.</p>
+          </div>
+          <div class="youtube-followers">
+            <h3 class="text-6xl font-bold dark:text-white">8239</h3>
+            <p class="text-dark-grayish-blue tracking-widest pt-1 dark:text-desaturated-blue">SUBSCRIBERS</p>
+          </div>
+          <div class="youtube-update">
+            <p class="text-bright-red font-semibold grid grid-flow-col justify-center gap-2">
+              <img class="up self-center" src="./images/icon-down.svg" alt="icon-up">
+              144 Today</p>
+          </div>
         </div>
       </div>
 
       <!-- Overview Today  -->
-      <div class="overview-container grid gap-y-4">
-        <h1 class="text-2xl">Overview- Today</h1>
-        <!-- Page Views -->
-        <div class="facebook-views grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue">
-          <div class="page-views grid gap-y-4 py-6 ">
-            <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Page Views</h4>
-            <p class="font-bold text-4xl dark:text-white">87</p>
+      <div class="overview-container grid">
+        <h1 class="text-2xl text-dark-grayish-blue font-semibold py-6">Overview- Today</h1>
+        <!-- Cards container -->
+        <div class="card-stats grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <!-- Page Views -->
+          <div class="facebook-views grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+            <div class="page-views grid gap-y-4 py-6 ">
+              <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Page Views</h4>
+              <p class="font-bold text-4xl dark:text-white">87</p>
+            </div>
+            <div class="page-logo grid items-center gap-y-4 py-6">
+              <img class="justify-self-end" src="../images/icon-facebook.svg" alt="facebook icon">
+              <p class="text-lime-green font-semibold grid grid-flow-col self-end gap-1">
+                <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
+                3%</p>
+            </div>
           </div>
-          <div class="page-logo grid items-center gap-y-4 py-6">
-            <img class="justify-self-end" src="../images/icon-facebook.svg" alt="facebook icon">
-            <p class="text-lime-green font-semibold grid grid-flow-col self-end gap-1">
-              <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
-              3%</p>
+          <!-- Facebook Likes -->
+          <div class="facebook-likes grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+            <div class="grid gap-y-4 py-6">
+              <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
+              <p class="font-bold text-4xl dark:text-white">52</p>
+            </div>
+            <div class="page-logo grid items-center gap-y-4 py-6">
+              <img class="justify-self-end" src="../images/icon-facebook.svg" alt="facebook icon">
+              <p class="text-bright-red font-semibold grid grid-flow-col self-end gap-1">
+                <img class="up self-center" src="./images/icon-down.svg" alt="icon-down">
+                2%</p>
+            </div>
           </div>
-        </div>
-        <!-- Facebook Likes -->
-        <div class="facebook-likes grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue">
-          <div class="grid gap-y-4 py-6">
-            <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
-            <p class="font-bold text-4xl dark:text-white">52</p>
+          <!-- Instagram Likes -->
+          <div class="instagram-likes grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue gap-x-10 dark:hover:bg-toggle-dark">
+            <div class="grid gap-y-4 py-6">
+              <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
+              <p class="font-bold text-4xl dark:text-white">5462</p>
+            </div>
+            <div class="page-logo grid gap-y-4 py-6">
+              <img class="justify-self-end" src="../images/icon-instagram.svg" alt="instagram icon">
+              <p class="text-lime-green font-semibold grid grid-flow-col self-end gap-1">
+                <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
+                2257%</p>
+            </div>
           </div>
-          <div class="page-logo grid items-center gap-y-4 py-6">
-            <img class="justify-self-end" src="../images/icon-facebook.svg" alt="facebook icon">
-            <p class="text-bright-red font-semibold grid grid-flow-col self-end gap-1">
-              <img class="up self-center" src="./images/icon-down.svg" alt="icon-down">
-              2%</p>
+          <!-- Instragram Profile Views -->
+          <div class="instagram-views grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+            <div class="grid gap-y-6 py-6">
+              <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Profile Views</h4>
+              <p class="font-bold text-4xl dark:text-white">52k</p>
+            </div>
+            <div class="page-logo grid gap-y-4 py-6">
+              <img class="justify-self-end" src="../images/icon-instagram.svg" alt="instagram icon">
+              <p class="text-lime-green font-semibold grid grid-flow-col self-end gap-1">
+                <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
+                1375%</p>
+            </div>
           </div>
-        </div>
-        <!-- Instagram Likes -->
-        <div class="instagram-likes grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue">
-          <div class="grid gap-y-4 py-6">
-            <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
-            <p class="font-bold text-4xl dark:text-white">5462</p>
+          <!-- Twitter Retweets -->
+          <div class="twitter-retweets grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+            <div class="grid gap-y-4 py-6">
+              <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Reweets</h4>
+              <p class="font-bold text-4xl dark:text-white">117</p>
+            </div>
+            <div class="page-logo grid gap-y-4 py-6">
+              <img class="justify-self-end" src="../images/icon-twitter.svg" alt="instagram icon">
+              <p class="text-lime-green font-semibold grid grid-flow-col self-end gap-1">
+                <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
+                303%</p>
+            </div>
           </div>
-          <div class="page-logo grid gap-y-4 py-6">
-            <img class="justify-self-end" src="../images/icon-instagram.svg" alt="instagram icon">
-            <p class="text-lime-green font-semibold grid grid-flow-col self-end gap-1">
-              <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
-              2257%</p>
+          <!-- Twitter Likes -->
+          <div class="twitter-likes grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+            <div class="grid gap-y-4 py-6">
+              <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
+              <p class="font-bold text-4xl dark:text-white">507</p>
+            </div>
+            <div class="page-logo grid gap-y-4 py-6">
+              <img class="justify-self-end" src="../images/icon-twitter.svg" alt="instagram icon">
+              <p class="text-lime-green font-semibold grid grid-flow-col self-end gap-1">
+                <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
+                553%</p>
+            </div>
           </div>
-        </div>
-        <!-- Instragram Profile Views -->
-        <div class="instagram-views grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue">
-          <div class="grid gap-y-4 py-6">
-            <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Profile Views</h4>
-            <p class="font-bold text-4xl dark:text-white">52k</p>
+          <!-- Youtube Likes -->
+          <div class="youtube-likes grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+            <div class="grid gap-y-4 py-6">
+              <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
+              <p class="font-bold text-4xl dark:text-white">107</p>
+            </div>
+            <div class="page-logo grid gap-y-4 py-6">
+              <img class="justify-self-end" src="../images/icon-youtube.svg" alt="instagram icon">
+              <p class="text-bright-red font-semibold grid grid-flow-col self-end gap-1">
+                <img class="up self-center" src="./images/icon-down.svg" alt="">
+                19%</p>
+            </div>
           </div>
-          <div class="page-logo grid gap-y-4 py-6">
-            <img class="justify-self-end" src="../images/icon-instagram.svg" alt="instagram icon">
-            <p class="text-lime-green font-semibold grid grid-flow-col self-end gap-1">
-              <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
-              1375%</p>
-          </div>
-        </div>
-        <!-- Twitter Retweets -->
-        <div class="twitter-retweets grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue">
-          <div class="grid gap-y-4 py-6">
-            <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Reweets</h4>
-            <p class="font-bold text-4xl dark:text-white">117</p>
-          </div>
-          <div class="page-logo grid gap-y-4 py-6">
-            <img class="justify-self-end" src="../images/icon-twitter.svg" alt="instagram icon">
-            <p class="text-lime-green font-semibold grid grid-flow-col self-end gap-1">
-              <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
-              303%</p>
-          </div>
-        </div>
-        <!-- Twitter Likes -->
-        <div class="twitter-likes grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue">
-          <div class="grid gap-y-4 py-6">
-            <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
-            <p class="font-bold text-4xl dark:text-white">507</p>
-          </div>
-          <div class="page-logo grid gap-y-4 py-6">
-            <img class="justify-self-end" src="../images/icon-twitter.svg" alt="instagram icon">
-            <p class="text-lime-green font-semibold grid grid-flow-col self-end gap-1">
-              <img class="up self-center" src="./images/icon-up.svg" alt="icon-up">
-              553%</p>
-          </div>
-        </div>
-        <!-- Youtube Likes -->
-        <div class="youtube-likes grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue">
-          <div class="grid gap-y-4 py-6">
-            <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Likes</h4>
-            <p class="font-bold text-4xl dark:text-white">107</p>
-          </div>
-          <div class="page-logo grid gap-y-4 py-6">
-            <img class="justify-self-end" src="../images/icon-youtube.svg" alt="instagram icon">
-            <p class="text-bright-red font-semibold grid grid-flow-col self-end gap-1">
-              <img class="up self-center" src="./images/icon-down.svg" alt="">
-              19%</p>
-          </div>
-        </div>
-        <!-- Youtube Total Views -->
-        <div class="youtube-views grid grid-flow-col justify-between px-6 bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue">
-          <div class="grid gap-y-4 py-6">
-            <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Total Views</h4>
-            <p class="font-bold text-4xl dark:text-white">1407</p>
-          </div>
-          <div class="page-logo grid gap-y-4 py-6">
-            <img class="justify-self-end" src="../images/icon-youtube.svg" alt="instagram icon">
-            <p class="text-bright-red font-semibold grid grid-flow-col self-end gap-1">
-              <img class="up self-center" src="./images/icon-down.svg" alt="">
-              12%</p>
-          </div>
+          <!-- Youtube Total Views -->
+          <div class="youtube-views grid grid-flow-col justify-between px-6 hover:bg-toggle-light cursor-pointer bg-light-grayish-blue rounded-md dark:bg-dark-desaturated-blue dark:hover:bg-toggle-dark">
+            <div class="grid gap-y-4 py-6">
+              <h4 class="text-dark-grayish-blue font-semibold dark:text-desaturated-blue">Total Views</h4>
+              <p class="font-bold text-4xl dark:text-white">1407</p>
+            </div>
+            <div class="page-logo grid gap-y-4 py-6">
+              <img class="justify-self-end" src="../images/icon-youtube.svg" alt="instagram icon">
+              <p class="text-bright-red font-semibold grid grid-flow-col self-end gap-1">
+                <img class="up self-center" src="./images/icon-down.svg" alt="icon-down">
+                12%</p>
+            </div>
+          </div> 
         </div>
       </div>
     </div>
   </main>
   <!-- Footer -->
-  <div class="attribution">
+  <div class="attribution dark:text-white">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Hangsihak Sin</a>.
+    Coded by <a href="">Hangsihak Sin</a>.
   </div>
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
