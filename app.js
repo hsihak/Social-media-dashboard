@@ -17,7 +17,7 @@ const switchTheme = () => {
   }
 }
 
-darkMode.addEventListener('click', toggleTheme);
+darkMode.addEventListener('click', toggleMode);
 
 
 
